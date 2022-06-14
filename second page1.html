@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+	<head>
+		<meta charset="utf-8">
+		<title>2page</title>
+		<style>
+			*{
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+				font-family: -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo", sans-serif;
+			}
+			.wrapper{
+				width: 1440px;
+				height: 1896px;
+			}
+			.header{
+					width: 1200px;
+					height: 80px;
+					text-align: center;
+					margin-left: auto;
+					margin-right: auto;
+			}
+			.header h2{
+					float: right;
+					vertical-align: middle;
+					line-height: 80px;
+					color: #484848;
+					font-size: 20px;
+			}
+			.darkmode{
+				float: right;
+				line-height: 80px;
+				margin-right: 48px;
+			}
+			.menu1{
+				float: left;
+				line-height: 80px;
+				margin-right: 48px;
+				vertical-align: middle;
+			}
+			.logo{
+				line-height: 80px;
+			}
+			.head img{
+				vertical-align: middle;
+			}
+			.hero-header{
+				width: 1200px;
+				margin-right: auto;
+				margin-left: auto;
+				padding-top: 40px;
+				padding-bottom: 28px;
+				padding-left: 40px;
+				padding-right: 40px;
+				border-top: solid 2px #BDBDBD;
+				border-bottom: solid 2px #BDBDBD;
+			}
+			.hero-header img{
+				display: block;
+				margin-right: auto;
+				margin-left: auto;			
+				margin-bottom: 24px;
+			}
+			.hero-header h1{
+				margin-left: 40px;
+				margin-bottom: 40px;
+				color: #3E3E3E;
+			}
+			.hero-header p{
+				margin-left: 40px;
+				color: #A9A9A9;
+			}
+			.info{
+				width: 1036px;
+				height: 824px;
+				margin-left: auto;
+				margin-right: auto;
+				padding-top: 76px;
+			}
+			.feature{
+				display: flex;
+    			flex-direction: row;
+    			align-items: center;
+    			justify-content: flex-start;
+			}
+			.feature:not(:first-child){
+				margin-top: 48px;
+			}
+			.feature_content span{
+				
+			}
+			.star{
+				display: inline-block;
+			    width: 17px;
+			    height: 16px;
+			    margin-top: -6px;
+				background-image: url(images/star.svg);
+    			background-position: center;
+    			background-repeat: no-repeat;
+    			background-size: contain;
+    			vertical-align: middle;
+			}
+			.black{
+				font-size: 16px;
+				display: inline-block;
+				vertical-align: middle;
+				margin-top: -2px;
+			}
+			.gray{
+				color: #AEAEAE;
+				font-size: 16px;
+				display: inline-block;
+				vertical-align: middle;
+				margin-top: -2px;
+			}
+			.feature h2{
+				font-size: 20px;
+				display: block;
+				width: 176px;
+			}
+			.feature p{
+				font-size: 16px;
+			}
+			.main-menu{
+				padding-top: 76px;
+				width: 1036px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.main-menu h1{
+				font-size: 20px;
+				width: 464px;
+				display: block;
+				padding-bottom: 12px;
+				border-bottom: solid 2px #BDBDBD;
+			}
+			.main-menu a{
+				font-size: 16px;
+				margin-left: 12px;
+				margin-top: 36px;
+				display: block;
+				width: 120px;
+			}
+			.menu{
+				display: flex;
+    			flex-direction: row;
+    			align-items: center;
+    			justify-content: flex-start;
+			}
+			.menu:not(:first-child){
+				margin-top: 36px;
+			}
+			.menu_header{
+				width: 416px;
+				font-size: 16px;
+				margin-left: 12px;
+				color: #AEAEAE;
+			}
+			.menu_content{
+				font-size: 16px;
+				color: #AEAEAE;
+			}
+			.footer{
+				background-color: #e9ecef;
+				width: 1440px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 164px;
+			}
+			.footer_top{
+				width: 1200px;
+				height: 124px;
+				margin-left: auto;
+				margin-right: auto;
+				border-bottom: solid 2px #000000;
+				position: relative;
+			}
+			.footer_top a{
+				left: 0;
+				position: absolute;
+				bottom: 0;
+			}
+			.subs_but{
+				position: absolute;
+				right: 0;
+				bottom: 0;
+			}
+			.subs_but h2{
+				font-size: 16px;
+			}
+			.footer_bottom{
+				width: 1200px;
+				height: 124px;
+				margin-left: auto;
+				margin-right: auto;
+				/*border-bottom: solid 2px #000000;*/
+				padding-top: 24px;
+			}
+			.list li{
+				float: left;
+				list-style-type: none;
+				font-size: 14px;
+			}
+			.list a{
+				text-decoration: none;
+				color: #000000;
+			}
+			.list p{
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+			.follow{
+				float: right;
+				margin-right: 74px;
+			}
+			.follow h2{
+				font-size: 16px;
+				margin-bottom: 24px;
+			}
+			.follow a{
+				margin-right: 12px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<a href="#" class="menu1 head"><img src="images/menu.svg"></a>
+				<a href="#" class="menu1 head"><img src="images/glass.svg"></a>
+				<a href="#" class="logo head"><img src="images/LOGO.svg"></a>
+				<a href="#"><h2>contact</h2></a>
+				<a href="#" class="darkmode head"><img src="images/dark mode.svg"></a>
+			</div>
+			<div class="hero-header">
+				<h1>도산 식물성</h1>
+				<img src="images/sikmul1.jpeg" width="1036" height="480">
+				<p>채소를 주제로 한 신선한 카페</p>
+			</div>
+			<div class="info">
+				<div class="feature">
+					<h2 class="feature_header">평점</h2>
+					<p class="feature_content">
+						<span class="star"></span>
+						<span class="black">4.77</span>
+						<span class="gray">/ 5</span>
+					</p>
+				</div>
+				<div class="feature">
+					<h2 class="feature_header">카테고리</h2>
+					<p class="feature_content">식물</p>
+				</div>
+				<div class="feature">
+					<h2 class="feature_header">웹사이트</h2>
+					<p class="feature_content">https://sikmulsung.com/</p>
+				</div>
+				<div class="feature">
+					<h2 class="feature_header">특징</h2>
+					<p class="feature_content">친환경 카페</p>
+				</div>
+				<div class="feature">
+					<h2 class="feature_header">가격대</h2>
+					<p class="feature_content">5,000원~7,000원</p>
+				</div>
+				<div class="main-menu">
+					<h1>대표메뉴</h1>
+					<div class="menu">
+						<p class="menu_header">식물성 블랙</p>
+						<p class="menu_content">7.0</p>
+					</div>
+					<div class="menu">
+						<p class="menu_header">식물성 화이트 크림</p>
+						<p class="menu_content">7.5</p>
+					</div>
+					<div class="menu">
+						<p class="menu_header">믹스 베리에이드</p>
+						<p class="menu_content">7.0</p>
+					</div>
+					<div class="menu">
+						<p class="menu_header">진저 블루베리 소르베</p>
+						<p class="menu_content">6.0</p>
+					</div>
+					<div class="menu">
+						<p class="menu_header">바질 파인 소르베</p>
+						<p class="menu_content">6.0</p>
+					</div>
+					<div class="menu">
+						<p class="menu_header">로즈마리 피치 소르베</p>
+						<p class="menu_content">6.0</p>
+					</div>
+					<a href="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220419_88%2F1650352328004CNK09_JPEG%2F0415_%25B3%25D7%25C0%25CC%25B9%25F6%25B8%25DE%25B4%25BA%25C6%25C7_%25B8%25DE%25B4%25BA%25C3%25DF%25B0%25A1.jpg" target="_blank">메뉴판 전체 보기</a>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="footer_top">
+					<a href="로고"><img src="images/LOGO2.svg"></a>
+					<div class="subs_but">
+						<h2>정기 구독하기</h2>
+						<input type="email" size="30" maxlength="30" placeholder="이메일 주소">
+						<input type="button" value="구독하기">
+					</div>
+				</div>
+				<div class="footer_bottom">
+					<ul class="list">
+						<li><a href="#">About us</a></li>
+						<li><p>|</p></li>
+						<li><a href="#">개인정보처리방침</a></li>
+						<li><p>|</p></li>
+						<li><a href="#">이용약관</a></li>
+						<li><p>|</p></li>
+						<li><a href="#">문의하기</a></li>
+					</ul>
+					<div class="follow">
+						<h2>팔로우</h2>
+						<a href="facebook"><img src="images/facebook.svg"></a>
+						<a href="instagram"><img src="images/instagram.svg"></a>
+						<a href="youtube"><img src="images/youtube.svg"></a>
+						<a href="twitter"><img src="images/twitter.svg"></a>
+						<a href="naver"><img src="images/naver.svg"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

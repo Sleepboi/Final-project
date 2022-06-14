@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+	<html lang="ko-KR">
+		<head>
+			<meta charset="utf-8">
+			<title>First page</title>
+			<style>
+				*{
+					box-sizing: border-box;
+					margin: 0;
+					padding: 0;
+					font-family: -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo", sans-serif;
+				}
+				.wrapper{
+					width: 1440px;
+					height: 2380px;
+				}
+				.header{
+					width: 1200px;
+					height: 80px;
+					text-align: center;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				.header h2{
+					float: right;
+					vertical-align: middle;
+					line-height: 80px;
+					color: #484848;
+					font-size: 20px;
+				}
+				.darkmode{
+					float: right;
+					line-height: 80px;
+					margin-right: 48px;
+				}
+				.menu1{
+					float: left;
+					line-height: 80px;
+					margin-right: 48px;
+					vertical-align: middle;
+				}
+				.logo{
+					line-height: 80px;
+				}
+				.head img{
+					vertical-align: middle;
+				}
+				.hero-header{
+					width: 1200px;
+					height: 420px;
+					background-image: url(images/coffee.jpg);
+					background-size: cover;
+					background-position: center center;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				.recommend{
+					width: 1200px;
+					height: 72px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				.best{
+					width: 240px;
+					height: 72px;
+					background-color: black;
+					text-align: center;
+					float: left;
+				}
+				.best a{
+					line-height: 72px;
+					vertical-align: middle;
+					color: white;
+					font-size: 20px;
+				}
+				.city{
+					float: left;
+					background-color: #F0F0F0;
+					width: 240px;
+					height: 72px;
+					text-align: center;
+					border: solid 1px #868686;
+				}
+				.city:not(:first-child){
+					border-left: none;
+				}
+				.city:hover{
+					background-color: #313131;
+				}
+				.city a{
+					line-height: 72px;
+					vertical-align: middle;
+					color: #868686;
+					font-size: 20px;
+					text-decoration: none;
+				}
+				.city a:hover{
+					color: white;
+					text-decoration: underline;
+				}
+				.sec_1{
+					width: 1200px;
+					height: 524px;
+					margin-left: auto;
+					margin-right: auto;
+					padding-top: 44px;
+					text-align: center;
+					border-bottom: solid 2px #BDBDBD;
+				}
+				.sec_1 h1{
+					font-size: 26px;
+				}
+				.inform{
+					width: 1036px;
+					height: 286px;
+					margin-top: 44px;
+					margin-right: auto;
+					margin-left: auto;
+				}
+				.recom-cafe{
+					display: block;
+					float: left;
+					text-align: center;
+					text-decoration: none;	
+				}
+				.recom-cafe img:hover{
+					opacity: 0.6;
+				}
+				.inform a:not(:first-child){
+					margin-left: 65px;
+				}
+				.cafe-name{
+					margin-top: 36px;
+					color: #999999;
+				}
+				.sec_2{
+					width: 1200px;
+					height: 524px;
+					text-align: center;
+					margin-left: auto;
+					margin-right: auto;
+					border-bottom: solid 2px #BDBDBD;
+					padding-top: 44px;
+				}
+				.sec_2 h1{
+					font-size: 26px;
+				}
+				.sec_2 iframe{
+					margin-top: 44px;
+				}
+				.sec_3{
+					width: 1200px;
+					height: 524px;
+					text-align: center;
+					margin-left: auto;
+					margin-right: auto;
+					padding-top: 44px;
+					/*border-bottom: solid 2px #4E4E4E;*/
+				}
+				.month{
+					font-size: 26px;
+					margin-bottom: 44px;
+					text-decoration: none;
+					color: #000000;
+					font-weight: bold;
+					display: block;
+				}
+				.month:hover{
+					opacity: 0.6;
+				}
+				.sec_3 img{
+					float: left;
+					margin-left: 82px;
+				}
+				.info_3{
+					text-align: left;
+					height: 295px;
+					width: 384px;
+					float: left;
+					margin-left: 104px;
+					padding: 64px 0px;
+				}
+				.info_3 h2{
+					font-size: 22px;
+					color: #4A4A4A;
+				}
+				.info_3 a{
+					font-size: 18px;
+					text-decoration: none;
+					color: #4A4A4A;
+				}
+				.info_3 p{
+					font-size: 14px;
+					color: #ADADAD;
+					margin-top: 12px;
+					line-height: 28px;
+				}
+				.footer{
+					background-color: #e9ecef;
+					width: 1440px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				.footer_top{
+					width: 1200px;
+					height: 124px;
+					margin-left: auto;
+					margin-right: auto;
+					border-bottom: solid 2px #000000;
+					position: relative;
+				}
+				.footer_top a{
+					left: 0;
+					position: absolute;
+					bottom: 0;
+				}
+				.subs_but{
+					position: absolute;
+					right: 0;
+					bottom: 0;
+				}
+				.subs_but h2{
+					font-size: 16px;
+				}
+				.footer_bottom{
+					width: 1200px;
+					height: 124px;
+					margin-left: auto;
+					margin-right: auto;
+					/*border-bottom: solid 2px #000000;*/
+					padding-top: 24px;
+				}
+				.list li{
+					float: left;
+					list-style-type: none;
+					font-size: 14px;
+				}
+				.list a{
+					text-decoration: none;
+					color: #000000;
+				}
+				.list p{
+					margin-left: 20px;
+					margin-right: 20px;
+				}
+				.follow{
+					float: right;
+					margin-right: 74px;
+				}
+				.follow h2{
+					font-size: 16px;
+					margin-bottom: 24px;
+				}
+				.follow a{
+					margin-right: 12px;
+				}
+			</style>
+		</head>
+		<body>
+			<div class="wrapper">
+				<div class="header">
+					<a href="#" class="menu1 head"><img src="images/menu.svg"></a>
+					<a href="#" class="menu1 head"><img src="images/glass.svg"></a>
+					<a href="#" class="logo head"><img src="images/LOGO.svg"></a>
+					<a href="#"><h2>contact</h2></a>
+					<a href="#" class="darkmode head"><img src="images/dark mode.svg"></a>
+				</div>
+				<div class="hero-header">
+					
+				</div>
+				<div class="recommend">
+					<div class="city">
+						<a href="#">Best</a>
+					</div>
+					<div class="city">
+						<a href="#">서울</a>
+					</div>
+					<div class="city">
+						<a href="#">경기</a>
+					</div>
+					<div class="city">
+						<a href="#">강원</a>
+					</div>
+					<div class="city">
+						<a href="#">부산</a>
+					</div>
+				</div>
+				<div class="main">
+					<div class="sec_1">
+						<h1>오늘의 카페 추천</h1>
+						<div class="inform">
+							<a href="second page1.html" class="recom-cafe">
+								<img src="images/sikmul.jpeg" width="302" height="286">
+								<div class="cafe-name">도산 식물성</div>
+							</a>
+							<a href="second page2.html" class="recom-cafe">
+								<img src="images/LOOOP.jpeg" width="302" height="286">
+								<div class="cafe-name">성수 LOOOP</div>
+							</a>
+							<a href="second page3.html" class="recom-cafe">
+								<img src="images/unbrick.jpeg" width="302" height="286">
+								<div class="cafe-name">망원 언브릭 커피</div>
+							</a>
+						</div>
+					</div>
+					<div class="sec_2">
+						<h1>주변 카페 잔여 좌석 지도</h1>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6325.357026789577!2d126.91781792490822!3d37.56263742382638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c98e8a188c921%3A0x2867c048a51f364b!2z7ISc7Jq47Yq567OE7IucIOuniO2PrOq1rCDsl7Drgqjrj5k!5e0!3m2!1sko!2skr!4v1655132119255!5m2!1sko!2skr" width="1036" height="328" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+					<div class="sec_3">
+						<a href="third page.html" class="month">이달의 카페</a>
+						<img src="images/smoko.jpeg" width="528" height="295">
+						<div class="info_3">
+							<h2>합정</h2>
+							<a href="https://www.instagram.com/smokoguys/">스모코 가이즈 &#8594;</a>
+							<p>호주와 뉴질랜드의 노동 현장에서는 쉬는 시간을 스모코 타임(smoko time)이라고 부릅니다.호주와 뉴질랜드의 여유로운 바이브를 모티브로 남반구식 커피와 수제 디저트, 와인을 비롯한 리큐르를 함께 준비했습니다. 언제든지 기분이 좋아지고 싶을 때 찾아주세요.</p>
+						</div>
+					</div>
+				</div>
+				<div class="footer">
+					<div class="footer_top">
+						<a href="로고"><img src="images/LOGO2.svg"></a>
+						<div class="subs_but">
+							<h2>정기 구독하기</h2>
+							<input type="email" size="30" maxlength="30" placeholder="이메일 주소">
+							<input type="button" value="구독하기">
+						</div>
+					</div>
+					<div class="footer_bottom">
+						<ul class="list">
+							<li><a href="#">About us</a></li>
+							<li><p>|</p></li>
+							<li><a href="#">개인정보처리방침</a></li>
+							<li><p>|</p></li>
+							<li><a href="#">이용약관</a></li>
+							<li><p>|</p></li>
+							<li><a href="#">문의하기</a></li>
+						</ul>
+						<div class="follow">
+							<h2>팔로우</h2>
+							<a href="facebook"><img src="images/facebook.svg"></a>
+							<a href="instagram"><img src="images/instagram.svg"></a>
+							<a href="youtube"><img src="images/youtube.svg"></a>
+							<a href="twitter"><img src="images/twitter.svg"></a>
+							<a href="naver"><img src="images/naver.svg"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</body>
+	</html>
